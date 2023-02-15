@@ -1,1 +1,1 @@
-"Hello World"
+from game import Game
