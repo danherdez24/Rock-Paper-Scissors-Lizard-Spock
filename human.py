@@ -9,6 +9,9 @@ class Human(Player):
         #how do we get user input
         #how do we pull value from a list (self.gesture)
         #how do we comebine the previous two points and store chosen gesture
+        self.chosen_gesture = self.gestures[0]
+        print(self.chosen_gesture)
+        
        
 
 

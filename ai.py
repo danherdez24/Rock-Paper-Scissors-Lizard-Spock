@@ -1,4 +1,6 @@
 from player import Player
 class AI(Player):
-
-    def choose_gesture(self, name):
+    def __init__(self):
+            super().__init__("AI")
+    def choose_gesture(self):
+        pass
