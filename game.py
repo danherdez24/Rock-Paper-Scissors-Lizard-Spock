@@ -16,11 +16,20 @@ class Game:
             elif user_input == "2":
                 self.player2 = Human(input("Enter username: "))
                 break
+
     def run_game(self):
         self.choose_game_type()
-        self.player1.choose_gesture()
+        self.best_of_three()
         pass
 
     def best_of_three(self):
         while self.player1.score < 3 and self.player2.score < 3:
+            self.player1.choose_gesture()
+            # p2 choose
+            self.player2.choose_gesture()
+            # if tie
+            if self.player1.chosen_gesture == "Rock" and self.player2.chosen_gesture == "Rock":
+                print("It's a tie")
+
+            # ~20 elifs
             pass
