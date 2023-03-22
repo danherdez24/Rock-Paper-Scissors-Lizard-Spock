@@ -8,7 +8,14 @@ class Game:
         self.player2 = None
 
     def choose_game_type(self):
-        self.player2 = AI()
+        while True:
+            user_input = input("How many players 1 or 2? ")
+            if user_input == "1":
+                self.player2 = AI()
+                break
+            elif user_input == "2":
+                self.player2 = Human(input("Enter username: "))
+                break
     def run_game(self):
         self.choose_game_type()
         self.player1.choose_gesture()

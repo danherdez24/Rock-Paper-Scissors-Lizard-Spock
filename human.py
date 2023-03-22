@@ -5,12 +5,15 @@ class Human(Player):
         super().__init__(name)
 
     def choose_gesture(self):
-        print(self.gestures[0])
+        while True:
         #how do we get user input
-        #how do we pull value from a list (self.gesture)
-        #how do we comebine the previous two points and store chosen gesture
-        self.chosen_gesture = self.gestures[0]
-        print(self.chosen_gesture)
+            user_input = input("What gesture? Enter 0 if Rock, 1 if Paper, 2 if Scissors, 3 if Lizard, 4 if Spock")
+         #how do we pull value from a list (self.gesture)
+            if user_input in ["0","1","2","3","4"]:
+                self.chosen_gesture = self.gestures[int(user_input)]
+                break
+        #how do we combine the previous two points and store chosen gesture
+        
         
        
 
