@@ -31,5 +31,78 @@ class Game:
             if self.player1.chosen_gesture == "Rock" and self.player2.chosen_gesture == "Rock":
                 print("It's a tie")
 
+            elif self.player1.chosen_gesture == "Paper" and self.player2.chosen_gesture == "Paper":
+                print("It's a tie")
+
+            elif self.player1.chosen_gesture == "Scissors" and self.player2.chosen_gesture == "Scissors":
+                print("It's a tie")
+
+            elif self.player1.chosen_gesture == "Lizard" and self.player2.chosen_gesture == "Lizard":
+                print("It's a tie")
+
+            elif self.player1.chosen_gesture == "Spock" and self.player2.chosen_gesture == "Spock":
+                print("It's a tie")
+
+            elif self.player1.chosen_gesture == "Rock" and self.player2.chosen_gesture == "Scissors":
+                print("Rock crushes Scissors")
+
+            elif self.player1.chosen_gesture == "Scissors" and self.player2.chosen_gesture == "Paper":
+                print("Scissors cuts Paper")
+
+            elif self.player1.chosen_gesture == "Paper" and self.player2.chosen_gesture == "Rock":
+                print("Paper covers Rock")
+
+            elif self.player1.chosen_gesture == "Rock" and self.player2.chosen_gesture == "Lizard":
+                print("Rock crushes Lizard")
+
+            elif self.player1.chosen_gesture == "Lizard" and self.player1.chosen_gesture == "Spock":
+                print("Lizard poisons Spock")
+
+            elif self.player1.chosen_gesture == "Spock" and self.player2.chosen_gesture == "Scissors":
+                print("Spock smashes Scissors")
+
+            elif self.player1.chosen_gesture == "Scissors" and self.player2.chosen_gesture == "Lizard":
+                print("Scissors decapitate Lizard")
+
+            elif self.player1.chosen_gesture == "Lizard" and self.player2.chosen_gesture == "Paper":
+                print("Lizard eats Paper")
+
+            elif self.player1.chosen_gesture == "Paper" and self.player2.chosen_gesture == "Spock":
+                print("Paper disproves Spock")
+
+            elif self.player1.chosen_gesture == "Spock" and self.player2.chosen_gesture == "Rock":
+                print("Spock vaporizes Rock")
+
+            elif self.player1.chosen_gesture == "Scissors" and self.player2.chosen_gesture == "Rock":
+                print("Rock crushes Scissors")
+
+            elif self.player1.chosen_gesture == "Paper" and self.player2.chosen_gesture == "Scissors":
+                print("Scissors cuts Paper")
+
+            elif self.player1.chosen_gesture == "Rock" and self.player2.chosen_gesture == "Paper":
+                print("Paper covers Rock")
+
+            elif self.player1.chosen_gesture == "Lizard" and self.player1.chosen_gesture == "Rock":
+                print("Rock crushes Lizard")
+
+            elif self.player1.chosen_gesture == "Spock" and self.player2.chosen_gesture == "Lizard":
+                print("Lizard poisons Spock")
+
+            elif self.player1.chosen_gesture == "Scissors" and self.player2.chosen_gesture == "Spock":
+                print("Spock smashes Scissors")
+
+            elif self.player1.chosen_gesture == "Lizard" and self.player2.chosen_gesture == "Scissors":
+                print("Scissors decapitate Lizard")
+
+            elif self.player1.chosen_gesture == "Paper" and self.player2.chosen_gesture == "Lizard":
+                print("Lizard eats Paper")
+
+            elif self.player1.chosen_gesture == "Spock" and self.player2.chosen_gesture == "Paper":
+                print("Paper disproves Spock")
+
+            elif self.player1.chosen_gesture == "Rock" and self.player2.chosen_gesture == "Spock":
+                print("Spock vaporizes Rock")
+
+            
             # ~20 elifs
             pass
